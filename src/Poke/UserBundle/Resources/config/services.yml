@@ -1,0 +1,7 @@
+parameters:
+#    poke_user.example.class: Poke\UserBundle\Example
+
+services:
+#    poke_user.example:
+#        class: %poke_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
