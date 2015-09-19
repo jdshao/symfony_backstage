@@ -1,0 +1,17 @@
+services:
+    sonata.admin.post:
+        class: Poke\UserBundle\Admin\AccountAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Post" }
+        arguments:
+            - ~
+            - Poke\UserBundle\Entity\Account
+            - ~
+        calls:
+            - [ setTranslationDomain, [PokeUserBundle]]
+
+    poke_user.admin.account:
+        class: Poke\UserBundle\Admin\AccountAdmin
+        arguments: [~, Poke\UserBundle\Entity\Account, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Account}

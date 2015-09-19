@@ -1,0 +1,85 @@
+<?php
+
+namespace Poke\UserBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+*	用户账号表
+*
+* @ORM\Table(name="account_appstore_1")
+* @ORM\Entity(repositoryClass="Poke\UserBundle\Entity\AccountRepository")
+*/
+class Account
+{
+
+	/**
+	 * @var [integer]
+	 *
+	 * @ORM\Column(name="id",type="integer")
+	 * @ORM\Id
+	 * @ORM\GeneratedValue(strategy="AUTO")
+	 */
+	private $id;
+
+	/**
+	 * [$userlevel 用户等级]
+	 * @var [integer]
+	 *
+	 * @ORM\Column(name="userlevel",type="integer")
+	 */
+	private $userLevel;
+
+	/**
+	 * [$levelexperience 用户当前等级经验]
+	 * @var [type]
+	 *
+	 * @ORM\Column(name="levelexperience",type="integer")
+	 */
+	private $levelExperience;
+
+	/**
+	 * [$usercoin 用户金币数]
+	 * @var [type]
+	 *
+	 * @ORM\Column(name="usercoin",type="integer")
+	 */
+	private $userCoin;
+
+	/**
+	 * [$userstone 用户宝石数]
+	 * @var [type]
+	 *
+	 * @ORM\Column(name="userstone",type="integer")
+	 */
+	private $userStone;
+
+	/**
+	 * [$chicken 用户鸡腿数]
+	 * @var [type]
+	 *
+	 * @ORM\Column(name="chicken",type="integer")
+	 */
+	private $chicken;
+
+	/**
+	 * [$userphysic 用户体力数]
+	 * @var [type]
+	 *
+	 * @ORM\Column(name="userphysic",type="integer")
+	 */
+	private $userPhysic;
+
+	/**
+	 * [$viplevel 用户vip等级]
+	 * @var [type]
+	 *
+	 * @ORM\Column(name="viplevel",type="integer")
+	 */
+	private $vipLevel;
+
+	function __construct()
+	{
+		
+	}
+}

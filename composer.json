@@ -22,7 +22,8 @@
         "sonata-project/admin-bundle": "^2.3",
         "sonata-project/doctrine-orm-admin-bundle": "^2.3",
         "sonata-project/jquery-bundle": "^1.10",
-        "sonata-project/doctrine-mongodb-admin-bundle": "^2.3"
+        "sonata-project/doctrine-mongodb-admin-bundle": "^2.3",
+        "knplabs/knp-paginator-bundle": "^2.4"
     },
     "scripts": {
         "post-install-cmd": [
