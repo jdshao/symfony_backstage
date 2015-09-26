@@ -1,7 +1,6 @@
-parameters:
-#    poke_user.example.class: Poke\UserBundle\Example
-
 services:
-#    poke_user.example:
-#        class: %poke_user.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    poke_user.admin.account:
+        class: Poke\UserBundle\Admin\AccountAdmin
+        arguments: [~, Poke\UserBundle\Entity\Account, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Account}

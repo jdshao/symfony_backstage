@@ -82,4 +82,175 @@ class Account
 	{
 		
 	}
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set userLevel
+     *
+     * @param integer $userLevel
+     * @return Account
+     */
+    public function setUserLevel($userLevel)
+    {
+        $this->userLevel = $userLevel;
+    
+        return $this;
+    }
+
+    /**
+     * Get userLevel
+     *
+     * @return integer 
+     */
+    public function getUserLevel()
+    {
+        return $this->userLevel;
+    }
+
+    /**
+     * Set levelExperience
+     *
+     * @param integer $levelExperience
+     * @return Account
+     */
+    public function setLevelExperience($levelExperience)
+    {
+        $this->levelExperience = $levelExperience;
+    
+        return $this;
+    }
+
+    /**
+     * Get levelExperience
+     *
+     * @return integer 
+     */
+    public function getLevelExperience()
+    {
+        return $this->levelExperience;
+    }
+
+    /**
+     * Set userCoin
+     *
+     * @param integer $userCoin
+     * @return Account
+     */
+    public function setUserCoin($userCoin)
+    {
+        $this->userCoin = $userCoin;
+    
+        return $this;
+    }
+
+    /**
+     * Get userCoin
+     *
+     * @return integer 
+     */
+    public function getUserCoin()
+    {
+        return $this->userCoin;
+    }
+
+    /**
+     * Set userStone
+     *
+     * @param integer $userStone
+     * @return Account
+     */
+    public function setUserStone($userStone)
+    {
+        $this->userStone = $userStone;
+    
+        return $this;
+    }
+
+    /**
+     * Get userStone
+     *
+     * @return integer 
+     */
+    public function getUserStone()
+    {
+        return $this->userStone;
+    }
+
+    /**
+     * Set chicken
+     *
+     * @param integer $chicken
+     * @return Account
+     */
+    public function setChicken($chicken)
+    {
+        $this->chicken = $chicken;
+    
+        return $this;
+    }
+
+    /**
+     * Get chicken
+     *
+     * @return integer 
+     */
+    public function getChicken()
+    {
+        return $this->chicken;
+    }
+
+    /**
+     * Set userPhysic
+     *
+     * @param integer $userPhysic
+     * @return Account
+     */
+    public function setUserPhysic($userPhysic)
+    {
+        $this->userPhysic = $userPhysic;
+    
+        return $this;
+    }
+
+    /**
+     * Get userPhysic
+     *
+     * @return integer 
+     */
+    public function getUserPhysic()
+    {
+        return $this->userPhysic;
+    }
+
+    /**
+     * Set vipLevel
+     *
+     * @param integer $vipLevel
+     * @return Account
+     */
+    public function setVipLevel($vipLevel)
+    {
+        $this->vipLevel = $vipLevel;
+    
+        return $this;
+    }
+
+    /**
+     * Get vipLevel
+     *
+     * @return integer 
+     */
+    public function getVipLevel()
+    {
+        return $this->vipLevel;
+    }
 }
